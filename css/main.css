@@ -1,0 +1,96 @@
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #fff;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+
+.mainContainer{
+  width:100%;
+  height:100%;
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=) repeat,url("../img/kraken.png");
+  background-size:auto,cover;
+  overflow:hidden;
+
+}
+
+.mainContainer #bubbles{
+  position:absolute;
+  z-index:100;
+}
+
+.mainContainer .layer{
+  position:relative;
+  z-index:200;
+  text-align:center;
+  color:white;
+}
+
+.mainContainer .layer p.notified{
+
+  margin-top:10em;
+  color:white;
+}
+
+.mainContainer .layer form{
+  width:500px;
+  height:50px;
+  overflow:hidden;
+  margin:0 auto;
+}
+
+.mainContainer .layer form input[type=email]{
+  height:40px;
+  width:75%;
+  border:2px solid #f8f8f8;
+  background:rgba(255,255,255,0.2);
+  color:white;
+  padding:.2em .5em;
+  float:left;
+  border-radius: 5px 0 0 5px;
+}
+
+.mainContainer .layer form input[type=submit]{
+  height:51px;
+  float:left;
+  padding:.2em .5em;
+  border:2px solid #f8f8f8;
+  border-left:0px;
+  border-radius:0px 5px 5px 0;
+  background:rgba(0,200,255,0.5);
+  color:white;
+  width:20%;
+
+}
+
+.mainContainer .layer p#countdown{
+  font-size:2em;
+}
+
+.mainContainer header h1{
+  text-shadow:5px 2px 5px #222;
+  text-align:center;
+  font-family: 'Pacifico', cursive;
+  font-size:5em;
+  color:#f0f9f9;
+}
